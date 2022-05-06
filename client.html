@@ -110,11 +110,12 @@ async function setup(){
     score=document.getElementById("score")
     images={}
     debug=document.getElementById("debug")
-    let response = await fetch("filelist");
-    let files = await response.json();
+    //let response = await fetch("filelist");
+    //let files = await response.json();
+    let files = ["kiwi.png", "kiwi1.png", "kiwi2.png"]
     files.forEach(file=>{
         let image=new Image()
-        image.src="/assets/"+file
+        image.src="assets/"+file
         images[file]=image
     }) 
     
